@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  /* Central Bharat PetroWork Brand Design Tokens */
+  --bpw-primary: #0F2B48;        /* Deep Petroleum Navy */
+  --bpw-primary-dark: #0A1C30;   /* Midnight Fuel Navy */
+  --bpw-primary-light: #1A4068;  /* Marine Petro Blue */
+  --bpw-secondary: #E55812;      /* Industrial Fuel Orange / Flame */
+  --bpw-accent: #F59E0B;         /* Safety Amber / Golden Fuel */
+  --bpw-background: #F8FAFC;     /* Clean Industrial Off-White */
+  --bpw-surface: #FFFFFF;        /* Pure Surface White */
+  --bpw-text: #0F172A;           /* High-contrast Deep Petroleum Slate */
+  --bpw-muted: #64748B;          /* Precision Muted Slate */
+  --bpw-border: #E2E8F0;         /* Clean Engineering Border */
+  --bpw-success: #059669;        /* PESO Compliance Green */
+  --bpw-warning: #D97706;        /* Safety Warning Amber */
+  --bpw-danger: #DC2626;         /* HazMat Emergency Red */
+
+  /* Functional Sub-Brand Accents (Used only as subtle badges/indicators) */
+  --bpw-accent-mitra: #059669;   /* Pump Mitra: Forecourt Uptime Green */
+  --bpw-accent-engineer: #F59E0B;/* Engineer: Field High-Visibility Amber */
+  --bpw-accent-market: #0284C7;  /* E-Market: Trade Cyan */
+  --bpw-accent-academy: #4F46E5; /* Academy: Credential Indigo */
+}
+
+/* Base Body Application Typography & Smoothing */
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: var(--bpw-text);
+  background-color: var(--bpw-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Centralized Brand Component Utilities */
+.bpw-card {
+  background-color: var(--bpw-surface);
+  border: 1px solid var(--bpw-border);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(15, 43, 72, 0.05), 0 1px 2px -1px rgba(15, 43, 72, 0.05);
+}
+
+.bpw-card-dark {
+  background-color: var(--bpw-primary-dark);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.bpw-btn-primary {
+  background-color: var(--bpw-primary);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.bpw-btn-primary:hover {
+  background-color: var(--bpw-primary-light);
+  transform: translateY(-1px);
+}
+
+.bpw-btn-secondary {
+  background-color: var(--bpw-secondary);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.bpw-btn-secondary:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+.bpw-btn-accent {
+  background-color: var(--bpw-accent);
+  color: var(--bpw-primary-dark);
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.bpw-btn-accent:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.bpw-btn-outline {
+  background-color: transparent;
+  color: var(--bpw-primary);
+  border: 1px solid var(--bpw-border);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.bpw-btn-outline:hover {
+  background-color: #F1F5F9;
+  border-color: #CBD5E1;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Bharat PetroWork",
+  "description": "Full Production Digital Ecosystem for Bharat PetroWork - Infrastructure, Pump Mitra, E-Market, Jobs & Academy.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
